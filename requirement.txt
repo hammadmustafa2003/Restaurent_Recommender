@@ -1,0 +1,11 @@
+fastapi
+fastapi.middleware.cors
+pydantic
+tensorflow
+numpy
+pandas
+scikit-learn
+nltk
+transformers
+keras
+uvicorn

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Recommendation</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <style>
+    body {
+        background-image: linear-gradient(to left top, #2903ff 0%, #3c0044 100%);
+        color: #fff;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        min-height: 100vh;
+
+        /* Prevent scrolling in the body */
+    }
+
+    #navbar {
+        background-color: transparent;
+        /* Bluish shade for the navbar */
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+
+    }
+
+    #navbar h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #navbar a:hover {
+        color: #ccc;
+    }
+
+    #chat-container {
+        width: 50%;
+        min-height: 80vh;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 60px; /* Adjust the top position to account for the navbar height */
+    }
+
+    #chat-box {
+        display: flex;
+        flex-direction: column;
+        background-color: #33333396;
+        padding: 20px;
+        /* border-radius: 5px 5px 0 0; */
+        max-height: calc(100vh - 150px); /* Adjust the max-height to fit the chat container */
+        overflow-y: auto;
+        /* Enable vertical scrolling if messages exceed the height */
+        flex: 1;
+        /* Distribute available space between chat-box and input-box */
+        -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        margin-bottom: 4%;
+        margin-top: 1%;
+    }
+
+    #chat-box::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    #chat-box::-webkit-scrollbar-track {
+        background: rgb(0, 0, 0, 0);
+    }
+
+    /* Handle */
+    #chat-box::-webkit-scrollbar-thumb {
+        background: #63005a;
+    }
+
+    /* Handle on hover */
+    #chat-box::-webkit-scrollbar-thumb:hover {
+        background: #0c5ea0;
+    }
+
+    .message {
+        padding: 8px 12px;
+        margin: 5px;
+        border-radius: 8px;
+    }
+
+    .received {
+        background-color: #555;
+        align-self: flex-start;
+        width: fit-content;
+        margin-right: 20%;
+    }
+
+    .sent {
+        background-color: #4CAF50;
+        color: #fff;
+        align-self: flex-end;
+        width: fit-content;
+        margin-left: 20%;
+    }
+
+    #input-box {
+        background-color: #64646480;
+        padding: 10px;
+        padding-left: 5%;
+        padding-right: 5%;
+        /* border-radius: 0 0 20px 20px; */
+        display: flex;
+        align-items: center;
+        -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #input-box input[type="text"] {
+        background-color: #666;
+        color: #fff;
+        border: none;
+        flex-grow: 1;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #send-button {
+        margin-left: 10px;
+        border: none;
+        background-color: #63005a;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #send-button:hover {
+        background-color: #0c5ea0;
+    }
+  </style> -->
+</head>
+<body>
+
+  <header id="navbar">
+    <h1 class="logo"><a href="#">Restaurant Recommendation</a></h1>
+    <ul class="main-nav">
+      <li><a href="#"><img src="website.png" height="40px" width="40px"></a></li>
+      <li><a href="http://www.linkedin.com/in/m-hammad-mustafa"><img src="linkedin.png" height="40px" width="40px"></a></li>
+      <li><a href="http://github.com/hammadmustafa2003"><img src="github.png" height="40px" width="40px"></a></li>
+    </ul>
+  </header>
+
+  <div id="chat-container">
+    <div id="chat-box">
+      <!-- Chat messages will be displayed here -->
+    </div>
+    <div id="input-box">
+      <input type="text" placeholder="Type your message..." />
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+
+  <!-- Your JavaScript code goes here -->
+  <script src="script.js"></script>
+</body>
+</html>
